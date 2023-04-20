@@ -16,7 +16,7 @@ func initializeRouter() {
 	r.HandleFunc("/article/{id}", UpdateArticle).Methods("PUT")
 	r.HandleFunc("/article/{id}", DeleteArticle).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(":3000", r))
+	log.Fatal(http.ListenAndServe(":80", r))
 }
 
 func main() {

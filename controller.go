@@ -13,13 +13,13 @@ import (
 var DB *gorm.DB
 var err error
 
-const dns = "root:123456@tcp(127.0.0.1:3306)/articledb"
+const dns = "bo4a3wj8rexxusfcksr1:pscale_pw_lgieDpQRpeSn8IDbsY5scsuGX7ElPSMMz1keTiJoG2H@tcp(aws.connect.psdb.cloud)/test?tls=true"
 
 type Article struct {
-	Id          string `json:"id`
-	Title       string `json:"title`
-	Description string `json:"description`
-	Content     string `json:"content`
+	Id          string `json:"id"`
+	Title       string `json:"title"`
+	Description string `json:"description"`
+	Content     string `json:"content"`
 }
 
 func InitialMigration() {
